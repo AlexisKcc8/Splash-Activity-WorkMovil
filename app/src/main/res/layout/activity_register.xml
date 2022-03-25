@@ -1,16 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register">
+    tools:context=".Register"
+    android:background="@drawable/background_app">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtTitle"
+        style="@style/text_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Regsitrate"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="248dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="@string/title_register"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/textView2"
+            style="@style/form_input"
+            android:hint="@string/txt_user_name" />
+
+        <EditText
+            android:id="@+id/txtLastName"
+            android:hint="@string/txt_lastname"
+            android:inputType="textPersonName"
+            style="@style/form_input"
+            />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:hint="@string/txtEmail"
+            android:inputType="textEmailAddress"
+            style="@style/form_input"/>
+        <EditText
+            style="@style/form_input"
+            android:id="@+id/txtPassword"
+            android:hint="@string/txtPassword"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="@string/txt_crear_cuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_primary"
+            android:textColor="@drawable/btn_text_color"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

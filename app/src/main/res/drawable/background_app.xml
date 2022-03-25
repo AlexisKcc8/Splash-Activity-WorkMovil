@@ -7,5 +7,5 @@
                     <solid  android:color="@android:color/transparent" />
             </shape>
     </item>
-    <item android:drawable="@drawable/ic_wave_bg" android:height="200dp"/>
+    <item android:drawable="@drawable/ic_wave_bg" android:height="400dp"/>
 </layer-list>
